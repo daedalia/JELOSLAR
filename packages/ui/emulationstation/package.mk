@@ -87,7 +87,6 @@ makeinstall_target() {
 
 	mkdir -p ${INSTALL}/usr/config/emulationstation/resources
 	cp -rf ${PKG_BUILD}/resources/* ${INSTALL}/usr/config/emulationstation/resources/
-	rm -rf ${INSTALL}/usr/config/emulationstation/resources/logo.png
 
         mkdir -p ${INSTALL}/usr/bin
 	cp ${PKG_BUILD}/es_settings ${INSTALL}/usr/bin
