@@ -3,12 +3,12 @@
 # Copyright (C) 2020-present Fewtarius
 
 PKG_NAME="emulationstation"
-PKG_VERSION="6738e21"
+PKG_VERSION="b2e0e4c"
 PKG_GIT_CLONE_BRANCH="main"
 PKG_REV="1"
 PKG_ARCH="any"
 PKG_LICENSE="GPL"
-PKG_SITE="https://github.com/JustEnoughLinuxOS/emulationstation"
+PKG_SITE="https://github.com/daedalia/emulationstation"
 PKG_URL="${PKG_SITE}.git"
 PKG_DEPENDS_TARGET="boost toolchain SDL2 freetype curl freeimage bash rapidjson SDL2_mixer fping p7zip alsa vlc splash"
 PKG_NEED_UNPACK="busybox"
@@ -27,8 +27,7 @@ if [ ! "${OPENGLES_SUPPORT}" = no ]; then
   PKG_CMAKE_OPTS_TARGET+=" -DGLES2=1"
 fi
 
-
-PKG_CMAKE_OPTS_TARGET+=" -DENABLE_EMUELEC=1 -DDISABLE_KODI=1 -DENABLE_FILEMANAGER=0 -DCEC=0"
+PKG_CMAKE_OPTS_TARGET+="  -DENABLE_UPDATES=1 -DENABLE_EMUELEC=1 -DDISABLE_KODI=1 -DENABLE_FILEMANAGER=0 -DCEC=0"
 
 ##########################################################################################################
 # The following allows building Emulation station from local copy by using EMULATIONSTATION_SRC.
@@ -51,7 +50,7 @@ PKG_CMAKE_OPTS_TARGET+=" -DENABLE_EMUELEC=1 -DDISABLE_KODI=1 -DENABLE_FILEMANAGE
 #
 # Run from the device:
 # --------------------
-# Copy ./emulationstation binary found in build.JELOS-<device>.aarch64/emulationstation-*/.install_pkg/usr/bin/ 
+# Copy ./emulationstation binary found in build.JELOS-<device>.aarch64/emulationstation-*/.install_pkg/usr/bin/
 # Via ssh, run emulationstation with
 # systemctl stop emustation
 # chmod +x ./emulationstation
