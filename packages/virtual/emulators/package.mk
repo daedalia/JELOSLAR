@@ -11,7 +11,7 @@ PKG_EMUS="hatarisa openbor hypseus-singe moonlight hypseus-singe pico-8 flycasts
           scummvmsa PPSSPPSDL yabasanshiroSA vicesa mupen64plussa-audio-sdl         \
           mupen64plussa-input-sdl mupen64plussa-ui-console mupen64plussa-video-rice \
           mupen64plussa-core mupen64plussa-rsp-hle mupen64plussa-rsp-cxd4 mupen64plussa-video-glide64mk2 \
-          mupen64plussa-video-gliden64 lzdoom gzdoom ecwolf amiberry raze drastic"
+          mupen64plussa-video-gliden64 lzdoom gzdoom amiberry raze drastic"
 
 PKG_RETROARCH="retroarch retroarch-overlays retroarch-joypads retroarch-assets libretro-database core-info"
 
@@ -26,8 +26,8 @@ LIBRETRO_CORES="2048 81 a5200 atari800 beetle-gba beetle-lynx beetle-ngp beetle-
                 parallel-n64_gln64 parallel-n64_glide64 pcsx_rearmed picodrive pokemini potator      \
                 ppsspp prboom prosystem puae px68k quasi88 quicknes race reminiscence sameboy        \
                 sameduck scummvm smsplus-gx snes9x snes9x2002 snes9x2005_plus snes9x2010 stella      \
-                stella-2014 swanstation TIC-80 tgbdual tyrquake xrick uae4arm uzem vba-next vbam     \
-                vecx vice yabasanshiro xmil mesen virtualjaguar ecwolf_libretro vitaquake2           \
+                stella-2014 swanstation tgbdual tyrquake xrick uae4arm uzem vba-next vbam     \
+                vecx vice yabasanshiro xmil mesen virtualjaguar vitaquake2           \
                 bsnes-mercury-performance"
 
 PKG_DEPENDS_TARGET="${PKG_EMUS} ${PKG_RETROARCH} ${LIBRETRO_CORES}"
